@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="it">
+<head>
+<meta charset="utf-8"> 
+<title>Bubble Bobble Demo in HTML/JS</title>
+<meta name="title" content="Bubble Bobble Demo in HTML/JS">  
+<meta name="description" content="Now, it is beginning of a sad story!! Let's make a journey back from Flash to the cave of Javascript and HTML!!" />
+<link rel="image_src" href="http://www.int33h.com/test/bb/img/logoBB.png" />
+
+<meta name="author" content="Karza">  
+<link rel="stylesheet" href="css/screen.css">
+<script type="text/javascript" src="libs/include_libs.js"></script>
+<script type="text/javascript" src="apps/include_apps.js"></script>
+<script>
+$(document).ready(init);
+
+function init(){
+  // Visualizza il preloader
+  initPreloaderApp();
+  // Inizializza l'app
+  var pathRes = "xml/resources.xml"
+  setTimeout(function(){initMainApp(pathRes)} , Const.TEMPO_MINIMO_PRELOADING);
+}
+
+function callTagAlias(parm){
+  // da sostituire con la funzione reale che tagga
+}
+</script>
+</head>
+
+<body>
+<!-- preloader -->
+<div class="preloaderApp">
+<img class="clipLoader" src="img/preloader/preloader.gif">
+</div>
+
+<!-- main app -->
+<div class="mainApp">
+	<div id="screen"></div>
+	<div id="intro">
+	<div id="scrittaSad" class="scrittaSad"></div>
+	</div>	
+	<div id="dragoVerde" class="drago"></div>
+	<div id="dragoBlu" class="drago"></div>
+	<div id="areaBolle"></div>
+	<div id="arrowLeft"></div>
+	<div id="arrowRight"></div>
+	<div id="arrowJump"></div>
+	<div id="arrowFire"></div>
+	<div id="selectVerde"></div>
+	<div id="selectBlu"></div>
+	<div id="istruzioni">
+		<img src="img/logoTaito.jpg" align="left"><label></label>
+	</div>
+	<div id="altro">
+		<label id="srcCode">Download <a href="bb.zip">source code</a> of this demo.</label><br><br>
+		<label><b>Other demos/experiments I made </b></label><label class="inPiccolo">(in order to re-learn html and javascript after years of Flash programming...)</label>
+		<div id="elencoDemo">
+			<div class="demoElement">
+				<img width="45" height="45" src="" align="left"><label class="demoLabel">label</label>
+			</div>
+		</div>
+		<br>
+		if you want you can <a href="mailto:karza.games@gmail.com">contact me</a>.<br>
+		&nbsp;
+	</div>
+	
+</div>
+
+<!-- library -->
+<div id="library" class="library">
+	<img id="sfondo" src="img/sfondoBB.png">
+	<img id="sheetDragoVerdeBolle" src="img/dragoverde_bolle.png">
+	<img id="sheetDragoBluBolle" src="img/dragoblu_bolle.png">
+	<img id="sheetDragoVerde" src="img/dragoverde.png">
+	<img id="sheetDragoBlu" src="img/dragoblu.png">
+	<img id="bollaIntro" src="img/bolleanimazioneIniziale.png">
+	<div id="bolla" class="bolla"></div>
+	<img id="sheetDragoVerdeBollaIntro" src="img/dragoVerdeBollaIntro.png">
+	<img id="sheetDragoBluBollaIntro" src="img/dragoBluBollaIntro.png">
+	<div id="dragoIntro" class="dragoIntro"></div>
+	<img id="imgArrowLeft" src="img/arrowLeft.png">
+	<img id="imgArrowRight" src="img/arrowRight.png">
+	<img id="imgArrowJumpFire" src="img/arrowJumpFire.png">
+	<img id="imgSelectVerde" src="img/selectVerde.png">
+	<img id="imgSelectBlu" src="img/selectBlu.png">
+</div>
+
+<div id="audioIntro">
+	<audio>
+		<source src="snd/bbIntro.mp3" type="audio/mp3">
+		<source src="snd/bbIntro.ogg" type="audio/ogg">
+	</audio> 
+</div>
+<div id="audioTheme">
+	<audio loop="loop">
+		<source src="snd/bbTheme.mp3" type="audio/mp3">
+		<source src="snd/bbTheme.ogg" type="audio/ogg">
+	</audio> 
+</div>
+<div id="audioJumpVerde">
+	<audio>
+		<source src="snd/bbJump.mp3" type="audio/mp3">
+		<source src="snd/bbJump.ogg" type="audio/ogg">
+	</audio> 
+</div>
+<div id="audioJumpBlu">
+	<audio>
+		<source src="snd/bbJump.mp3" type="audio/mp3">
+		<source src="snd/bbJump.ogg" type="audio/ogg">
+	</audio> 
+</div>
+<div id="audioFireVerde">
+	<audio>
+		<source src="snd/bbFire.mp3" type="audio/mp3">
+		<source src="snd/bbFire.ogg" type="audio/ogg">
+	</audio> 
+</div>
+<div id="audioFireBlu">
+	<audio>
+		<source src="snd/bbFire.mp3" type="audio/mp3">
+		<source src="snd/bbFire.ogg" type="audio/ogg">
+	</audio> 
+</div>
+
+
+</body>
+</html>

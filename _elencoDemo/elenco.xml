@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<root>
+	<demos>
+		<demo>
+			<id>mi</id>
+			<img><![CDATA[http://www.int33h.com/test/mi/img/icona90mi.jpg]]></img>
+			<text><![CDATA[<a href="http://www.int33h.com/test/mi/">Monkey Island - Insult Swordfighting Game</a> in HTML/JS, VERY interactive, works on mobile but with smaller spritesheets]]></text>
+		</demo>
+		<demo>
+			<id>bb</id>
+			<img><![CDATA[http://www.int33h.com/test/bb/img/logoBB.png]]></img>
+			<text><![CDATA[<a href="http://www.int33h.com/test/bb/">Bubble Bobble</a> Demo in HTML/JS, interactive]]></text>
+		</demo>
+	</demos>
+</root>

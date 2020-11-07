@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="it">
+<html lang="es">
 <head>
 <meta charset="utf-8"> 
 <title>Bubble Bobble Demo in HTML/JS</title>
@@ -9,8 +9,8 @@
 
 <meta name="author" content="Karza">  
 <link rel="stylesheet" href="css/screen.css">
-<script type="text/javascript" src="libs/include_libs.js"></script>
-<script type="text/javascript" src="apps/include_apps.js"></script>
+<script type="text/javascript" src="./libs/include_libs.js"></script>
+<script type="text/javascript" src="./apps/include_apps.js"></script>
 <script>
 $(document).ready(init);
 
@@ -18,7 +18,7 @@ function init(){
   // Visualizza il preloader
   initPreloaderApp();
   // Inizializza l'app
-  var pathRes = "xml/resources.xml"
+  var pathRes = "./xml/resources.xml"
   setTimeout(function(){initMainApp(pathRes)} , Const.TEMPO_MINIMO_PRELOADING);
 }
 
@@ -122,7 +122,6 @@ function callTagAlias(parm){
 		<source src="snd/bbFire.ogg" type="audio/ogg">
 	</audio> 
 </div>
-
 
 </body>
 </html>
